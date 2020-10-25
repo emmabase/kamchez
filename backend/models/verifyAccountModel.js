@@ -9,7 +9,7 @@ const verifyAccountSchema = new mongoose.Schema({
         type: String, default: null
     },
     token: {
-        type: Number,
+        type: String,
         default: null,
     },
     tokenTime: {
@@ -17,8 +17,6 @@ const verifyAccountSchema = new mongoose.Schema({
         default: new Date().toString()
     }
 });
-
-
 const verifyAccountModel = mongoose.model("VerifyAccount", verifyAccountSchema);
 
 export default verifyAccountModel;
